@@ -1,12 +1,28 @@
 #!/bin/sh
 
+banner() {
+cat <<'eof'
+   __             __  ___                  _
+  / _|_      __   \ \/ / |_ _ __ __ _  ___| |_ ___  _ __
+ | |_\ \ /\ / /____\  /| __| '__/ _` |/ __| __/ _ \| '__|
+ |  _|\ V  V /_____/  \| |_| | | (_| | (__| || (_) | |
+ |_|   \_/\_/     /_/\_\\__|_|  \__,_|\___|\__\___/|_|
+         by @shubhamvis98 | https://fossfrog.in
+
+eof
+}
+
+banner
+
 FILE=$1
 OUTPUT=$(pwd)/output
-mkdir -p ${OUTPUT}
+export PATH=$PATH:$(pwd)/bin
 
 if [ ! -f "${FILE}" ]; then
 	echo "[!]Input file doesn't exist"
 	exit
+else
+	mkdir -p ${OUTPUT}
 fi
 
 chdir() {
