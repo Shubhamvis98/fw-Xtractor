@@ -21,3 +21,13 @@ fw-Xtractor is a tool to extract and squash firmware files from the vendor parti
 ## 🛠️ TESTED ON DEVICES:
 - Poco F1 (beryllium)
 - Xiaomi 11T Pro (vili)
+
+## 📜 THIRD-PARTY TOOLS:
+
+This project bundles the following binaries:
+
+- `jq` – Creative Commons CC BY 3.0 [SOURCE](https://github.com/jqlang/jq)
+- `pil-squasher` – BSD 3-Clause License [SOURCE](https://github.com/linux-msm/pil-squasher)
+
+See the LICENSES folder for full license texts.
+
